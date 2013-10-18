@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to our restaurant</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+
+<!-- HTML5 shim for IE backwards compatibility -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<div class="container-fluid">
+
+
+        <div class="row-fluid pagination-centered header1" >
+        	<header class="span12" >
+            <!--    <img src="restaurant_header.jpg" alt="logo" class="img-rounded"/> -->
+                              <!--  Carousel  -->
+                <div id="this-carousel-id" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="restaurant_header.jpg" alt="" />
+                     <div class="carousel-caption">
+                        <p>Welcome !</p>
+                  </div>
+                  </div>
+                    <div class="item">
+                      <img src="restaurant_header_example2.jpg" alt="" />
+                      <div class="carousel-caption">
+                        <p>Food</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="restaurant_header_example3.jpg" alt="" />
+                      <div class="carousel-caption">
+                        <p>Wine</p>
+                      </div>
+                   </div>
+                  <div class="item">
+                      <img src="cocktails_header.jpg" alt="" />
+                      <div class="carousel-caption">
+                        <p>Cocktails</p>
+                      </div>
+                  </div>
+                </div>
+                    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+                    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+                </div>
+                <!-- /.carousel -->
+
+            </header>
+        </div>
+        
+        
+        
+        <div class="row-fluid pull-left">
+       		<div class="span1">
+           		<h2 class="text-left" style="color:#CCC">Menu:</h2>
+                <nav class="navbar-inner btn-group-vertical">  
+                    <li class="btn btn-inverse" style="font-size:large; color:#CCC">Soups</li>
+	                <li class="btn btn-inverse" style="font-size:large">Salads</li>
+                    <li class="btn btn-inverse" style="font-size:large">Pizza</li>
+                    <li class="btn btn-inverse" style="font-size:large">Dessert</li>
+                    <li class="btn btn-inverse" style="font-size:large">Drinks</li>
+ 
+                </nav>
+            </div>>
+            
+            <div class="span10 pull-left offset1" style="border:groove #313131">
+            	<div class="span3">
+                	<img src="pizza.jpg" alt="product" class="img-polaroid foodimage"/>
+                </div>
+                <div class="span2">
+                	<h4 style="padding-top:20; color:#CCC " >Pizza of the day</h4>
+                </div>
+                <div class="span3"style="padding-top:5">
+               		<p style="color:#CCC">Tomato sauce (purée),Mozzarella or Parmesan cheese, Feta cheese,Mushrooms, Bell peppers, Italian sausage, Pepperoni, Onions, Sliced ham</p>
+                </div>
+                <div class="span1">
+                	<h4 style="color:#CCC">$5,80</h4>
+                    <h4 style="color:#CCC">600g.</h4>
+                </div>
+                <div class="span1">
+                	<div style="">
+                    	<h6 style="color:#CCC">Quantity:</h6>
+                		<input type="number" name="Quantity" style="width:50px;"/>
+                    </div>
+                    <div>
+                    	<button class="btn btn-inverse" type="submit" value="Order">Order</button>          
+                    </div>
+                </div>
+                
+        	</div>
+  		</div>	
+       
+
+ 		<div class="row-fluid">   
+            <div class="span4 visible-desktop" style="color:#CCC"> Just TEST ->This is visible on the desktop. </div>
+            <div class="span4 visible-tablet" style="color:#CCC"> Just TEST ->This is visible on the tablet. </div>
+            <div class="span4 visible-phone" style="color:#CCC"> Just TEST ->This is visible on the phone. </div>
+        </div>
+
+		<div class="row-fluid span12" style="text-align:center">   
+			<h4 style="color:#CCC">Total: $0.00</h4>
+          
+            <div class="btn-group">
+				 <a class="btn dropdown-toggle  btn-inverse" data-toggle="dropdown" href="#">Pay<span class="caret"></span></a>
+					 <ul class="dropdown-menu" style="color:#CCC">
+					      <button class="btn btn-inverse" type="submit" value="Pay1">Cash </button>
+                          <button class="btn btn-inverse" type="submit" value="Pay2">With card</button>
+					 </ul>
+			</div>
+
+		</div>
+		
+   </div>
+   
+     <footer class="span2 offset10">
+		<h5 style="color:#CCC"> &copy;2013 project.com</h5>
+     </footer>
+        
+<script src="http://code.jquery.com/jquery-latest.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /codeigniter/public_html/
+
+    Options +FollowSymLinks
+    #'system' can be replaced if you have renamed your system folder.
+    RewriteCond %{REQUEST_URI} ^system.*
+    RewriteRule ^(.*)$ /codeigniter/public_html/index.php/$1 [L]
+
+    #Checks to see if the user is attempting to access a valid file,
+    #such as an image or css document, if this isn't true it sends the
+    #request to index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /codeigniter/public_html/index.php/$1 [L]
+
+    #This last condition enables access to the images and css folders, and the robots.txt file
+    RewriteCond $1 !^(index\.php|images|css|js|public)
+    RewriteRule ^(.*)$ /codeigniter/public_html/index.php$1 [L]
+
+   
+    
+
+</IfModule>
